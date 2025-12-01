@@ -1,4 +1,4 @@
-# Warung Animation (Java)
+# Warung Grafik (Java)
 
 ## Steps
 1. Download langsung via tombol `<> Code` -> `Download ZIP` diatas
