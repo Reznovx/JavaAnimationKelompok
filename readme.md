@@ -1,30 +1,26 @@
 # Warung Animation (Java)
 
-Quick steps to run this program.
-
-## Prerequisites
-- JDK 11+ installed and on your PATH, or a newer JDK.
-- Visual Studio Code with Java support (e.g. "Extension Pack for Java" or "Language Support for Java(TM) by Red Hat" and "Debugger for Java").
-
 ## Steps
-1. Download the repository ZIP from the GitHub link and extract it into a folder.
-2. Open that folder in VS Code (`File > Open Folder...`).
-3. The program entry point is the `main` method in [`WarungAnimation.main`](WarungAnimation.java). You can run it in two ways:
+1. Download langsung via tombol `<> Code` -> `Download ZIP` diatas
+2. Extract folder nya bebas ke mana aja
+3. The program entry point is the `main` method in [`WarungAnimation.main`](WarungAnimation.java).
 
 ### Run in VS Code
+- Open folder `JavaAnimationKelompok` -> Right-click -> Show more options -> Open with Code
 - Open `WarungAnimation.java`.
-- Use the "Run" code lens above `main`, or right-click the file and choose "Run Java", or use the Debug pane to start.
+- Use the "Run" code lens above `main` (baris 207), or right-click the file and choose "Run Java"
+- ![hotorun.png](howtorun.png)
 
-### Run from the command line
-- Open a terminal in the folder containing the `.java` files.
-- Compile:
-```sh
-javac *.java
-```
-- Run:
-```sh
-java WarungAnimation
-```
+### Run from BlueJ (ribet not recommend)
+- Buka BlueJ, `Project` -> `New Project...`
+- Name isi 'WarungGrafikAnimation' -> OK
+- Create `New Class...`
+- Class Name isi 'WarungAnimation.java' -> OK
+- Copas isi code dari sini [WarungAnimation.java](WarungAnimation.java)
+- Compile
+- Lakuin hal yang sama buat [Cloud.java](Cloud.java) dan [CustomerObject.java](CustomerObject.java)
+- Siap di Run
+- Done
 
 ## Files
 - [WarungAnimation.java](WarungAnimation.java) — contains the `main` method.
