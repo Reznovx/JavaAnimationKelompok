@@ -137,6 +137,27 @@ public class WarungAnimation extends JPanel implements ActionListener {
         g2d.fillOval(treeX + 40, treeY - 30, 10, 10);
         g2d.fillOval(treeX + 15, treeY - 70, 10, 10);
 
+
+        // Gambar Pohon persis di sebelah kanan warung
+        int tree2X = getWidth() / 2 + 250;
+        int tree2Y = getHeight() / 2 + 5;
+        g2d.setColor(trunkColor);
+        g2d.setStroke(new BasicStroke(15, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        // Batang dan cabang
+        g2d.drawLine(tree2X + 20, tree2Y + 50, tree2X + 20, tree2Y);
+        g2d.drawLine(tree2X + 20, tree2Y, tree2X - 10, tree2Y - 40);
+        g2d.drawLine(tree2X + 20, tree2Y, tree2X + 50, tree2Y - 20);
+        g2d.setStroke(new BasicStroke(1));
+        // Daun
+        g2d.setColor(leafColor);
+        g2d.fillOval(tree2X - 45, tree2Y - 80, 80, 80);
+        g2d.fillOval(tree2X + 10, tree2Y - 50, 70, 70);
+        // Bunga kecil pada dedaunan
+        g2d.setColor(flowerColor);
+        g2d.fillOval(tree2X - 15, tree2Y - 60, 10, 10);
+        g2d.fillOval(tree2X + 40, tree2Y - 30, 10, 10);
+        g2d.fillOval(tree2X + 15, tree2Y - 70, 10, 10);
+
         // Gambar warung (bangunan, atap, barang)
         int warungWidth = 300;
         int warungHeight = 200;
@@ -167,7 +188,7 @@ public class WarungAnimation extends JPanel implements ActionListener {
         // Nama warung
         g2d.setColor(black);
         g2d.setFont(new Font("Serif", Font.BOLD, 24));
-        g2d.drawString("WARUNG GRAFIK", warungX + 60, warungY + 25);
+        g2d.drawString("WARUNG SHAPES", warungX + 60, warungY + 25);
 
         // Gambar pedagang di depan warung (sederhana)
         int sellerX = warungX + warungWidth / 2 - 30;
@@ -190,10 +211,6 @@ public class WarungAnimation extends JPanel implements ActionListener {
         for (CustomerObject customer : customers) {
             customer.draw((Graphics2D) g);
         }
-
-        // Gambar pelanggan berdiri disebelah toko
-        // customerBerdiri.draw((Graphics2D) g);
-
 
         // Matahari
         g2d.setColor(Color.YELLOW);
