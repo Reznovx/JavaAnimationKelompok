@@ -8,12 +8,12 @@ import java.awt.geom.*;
 public class CustomerObject {
     // posisi dan kecepatan horizontal pelanggan
     private int x, y;
-    private int deltaX;
+    private final int deltaX;
     // skala untuk menggambar (untuk variasi ukuran)
-    private double scale;
+    private final double scale;
     // ukuran dasar pelanggan sebelum diskalakan
     private static final int CUSTOMER_WIDTH = 60;
-    private static final int CUSTOMER_HEIGHT = 120;
+    // private static final int CUSTOMER_HEIGHT = 120;
 
     // Konstruktor: inisialisasi posisi, kecepatan, dan skala
     public CustomerObject(int startX, int startY, int speedX, double initialScale) {
